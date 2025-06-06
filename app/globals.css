@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 217.2 32.6% 17.5%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+  }
+
+  /* .dark variables are not strictly necessary if we are not using shadcn's dark mode toggle, 
+     but good to keep for consistency if shadcn components are added later.
+     For a pure black/white/green theme, these might be simplified or aligned.
+     Given the direct color usage (preto-asfalto, branco-giz, verde-detalhe),
+     these .dark variables might have less impact on the custom theme.
+  */
+  .dark {
+    --background: 222.2 84% 4.9%; /* Example: This would be black */
+    --foreground: 210 40% 98%; /* Example: This would be white */
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 210 40% 98%;
+
+    --accent: 217.2 32.6% 17.5%; /* This could be the new green */
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%; /* This could be the new green or white */
+    --input: 217.2 32.6% 17.5%;
+    --ring: 215 20.2% 65.1%; /* This could be the new green */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border; /* This will use the HSL border, consider changing if a specific color is always needed */
+  }
+  body {
+    @apply bg-preto-asfalto text-branco-giz; /* Ensures body defaults to new theme */
+    scroll-behavior: smooth;
+  }
+}
+
+/* Custom Animations - greenPulse color is now handled by tailwind.config.ts keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.animate-fadeIn {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fadeInUp {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes scaleUp {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.animate-scaleUp {
+  animation: scaleUp 0.7s ease-out forwards;
+}
+
+/*
+  The greenPulse keyframes are now primarily defined in tailwind.config.js.
+  If this definition in globals.css is still active and not overridden,
+  it should also be updated or removed to avoid conflicts.
+  Assuming tailwind.config.js takes precedence for animations defined there.
+*/
+/*
+@keyframes greenPulse {
+  0%,
+  100% {
+    box-shadow: 0 0 8px rgba(0, 246, 63, 0.4); // UPDATED
+  }
+  50% {
+    box-shadow: 0 0 16px rgba(0, 246, 63, 0.7); // UPDATED
+  }
+}
+.animate-greenPulse {
+  animation: greenPulse 2.5s infinite ease-in-out;
+}
+*/
