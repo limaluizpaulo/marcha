@@ -27,7 +27,7 @@ const AnimatedSection: React.FC<{
 export default function HomePage() {
   const [copied, setCopied] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
-  const pixKey = "camisetasmarchagru@proton.me"
+  const pixKey = "fortalecenossacasa@gmail.com"
 
   const handleCopy = () => {
     navigator.clipboard.writeText(pixKey)
@@ -62,39 +62,40 @@ export default function HomePage() {
 
   const modelosCamisetas = [
     {
-      imgSrc:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-06-06%20at%2015.55.35-a6vLKVHXiCaccXdr1FD02hAxgXfkBp.jpeg",
-      alt: "Camiseta Preta Marcha da Maconha Guarulhos",
-      title: "🖤 Clássica Preta",
-      whatsappText: "Olá! Quero a camiseta preta 'Marcha da Maconha Guarulhos'.",
+      imgSrc: "/modelo-camiseta1.png",
+      alt: "Camiseta Modelo 1 - Marcha da Maconha Guarulhos",
+      title: "🖤 Modelo 1",
+      whatsappText: "Olá! Quero a camiseta Modelo 1 da Marcha da Maconha Guarulhos.",
     },
     {
-      imgSrc:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-06-06%20at%2015.55.06-LmsXhkprw6twlzpDGCNlF0xqi1BKoc.jpeg",
-      alt: "Camiseta Verde Marcha da Maconha Guarulhos",
-      title: "💚 Verde Oficial",
-      whatsappText: "Olá! Quero a camiseta verde 'Marcha da Maconha Guarulhos'.",
+      imgSrc: "/modelo-camiseta2.png",
+      alt: "Camiseta Modelo 2 - Marcha da Maconha Guarulhos",
+      title: "💚 Modelo 2",
+      whatsappText: "Olá! Quero a camiseta Modelo 2 da Marcha da Maconha Guarulhos.",
     },
     {
-      imgSrc:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-06-06%20at%2015.55.25-URo8TKNNi0niIItprnVQgy7NzODQxf.jpeg",
-      alt: "Camiseta Branca Marcha da Maconha Guarulhos",
-      title: "🤍 Branca Clean",
-      whatsappText: "Olá! Quero a camiseta branca 'Marcha da Maconha Guarulhos'.",
+      imgSrc: "/modelo-camiseta3.png",
+      alt: "Camiseta Modelo 3 - Marcha da Maconha Guarulhos",
+      title: "🤍 Modelo 3",
+      whatsappText: "Olá! Quero a camiseta Modelo 3 da Marcha da Maconha Guarulhos.",
     },
     {
-      imgSrc:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/camiseta-legalize-B2Edh1iYrDRrhXVdFvoqo8l8SgWkSK.png",
-      alt: "Camiseta Legalize Já!",
-      title: "🌿 Legalize Já!",
-      whatsappText: "Olá! Quero a camiseta 'Legalize Já!'.",
+      imgSrc: "/modelo-camiseta4.png",
+      alt: "Camiseta Modelo 4 - Marcha da Maconha Guarulhos",
+      title: "🌿 Modelo 4",
+      whatsappText: "Olá! Quero a camiseta Modelo 4 da Marcha da Maconha Guarulhos.",
     },
     {
-      imgSrc:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/camiseta-fogo-rY7LAQVYw6kpFXTnCiaZ11IlFggnZ2.png",
-      alt: "Camiseta Fogo nos Racistas",
-      title: "🔥 Fogo nos Racistas",
-      whatsappText: "Olá! Quero a camiseta 'Fogo nos Racistas, Paz nas Quebradas'.",
+      imgSrc: "/modelo-camiseta5.png",
+      alt: "Camiseta Modelo 5 - Marcha da Maconha Guarulhos",
+      title: "🔥 Modelo 5",
+      whatsappText: "Olá! Quero a camiseta Modelo 5 da Marcha da Maconha Guarulhos.",
+    },
+    {
+      imgSrc: "/modelo-camiseta6.png",
+      alt: "Camiseta Modelo 6 - Marcha da Maconha Guarulhos",
+      title: "✊ Modelo 6",
+      whatsappText: "Olá! Quero a camiseta Modelo 6 da Marcha da Maconha Guarulhos.",
     },
   ]
 
@@ -201,7 +202,7 @@ export default function HomePage() {
               </p>
             </div>
             <p className="text-lg text-branco-giz/90">
-              Valor: <span className="font-bold text-xl text-verde-detalhe">R$ 40,00</span>{" "}
+              Valor: <span className="font-bold text-xl text-verde-detalhe">R$ 60,00</span>{" "}
               <span className="block sm:inline-block text-sm text-branco-giz/70">
                 (contribuição consciente é bem-vinda!)
               </span>
@@ -236,15 +237,15 @@ export default function HomePage() {
                   {modelosCamisetas.map((item, index) => (
                     <div
                       key={item.title + index}
-                      className="flex-[0_0_100%] sm:flex-[0_0_50%] lg:flex-[0_0_50%] min-w-0 pl-4 relative"
+                      className="flex-[0_0_100%] sm:flex-[0_0_50%] lg:flex-[0_0_33.333%] xl:flex-[0_0_25%] min-w-0 pl-4 relative"
                     >
                       <div className="bg-neutral-900 rounded-xl overflow-hidden shadow-2xl border border-verde-detalhe/50 hover:border-verde-detalhe transition-all duration-300 group hover:shadow-[0_0_20px_rgba(0,246,63,0.3)] transform hover:-translate-y-2 h-full flex flex-col">
-                        <div className="relative aspect-[4/3] overflow-hidden">
+                        <div className="relative h-80 w-full overflow-hidden">
                           <Image
                             src={item.imgSrc || "/placeholder.svg"}
                             alt={item.alt}
                             fill
-                            objectFit="cover"
+                            style={{ objectFit: "contain" }}
                             className="group-hover:scale-105 transition-transform duration-500 ease-in-out"
                           />
                         </div>
