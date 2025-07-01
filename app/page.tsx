@@ -251,8 +251,8 @@ export default function HomePage() {
                         </div>
                         <div className="p-6 text-center flex flex-col flex-grow">
                           <h3 className="font-oswald text-3xl font-bold uppercase text-branco-giz">{item.title}</h3>
-                          <p className="mt-2 text-sm text-branco-giz/70">Tamanhos: P / M / G / GG / XG</p>
-                          <p className="text-4xl font-bold text-branco-giz my-4">R$ 40</p>
+                          <p className="mt-2 text-sm text-branco-giz/70">Tamanhos: P / M / G / GG</p>
+                          <p className="text-4xl font-bold text-branco-giz my-4">R$ 60</p>
                           <div className="mt-auto flex justify-center">
                             <Link
                               href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(item.whatsappText)}`}
