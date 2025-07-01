@@ -35,7 +35,7 @@ export default function HomePage() {
     setTimeout(() => setCopied(false), 2000)
   }
 
-  const whatsappNumber = "5511967322147"
+  const whatsappNumber = "5511975661411"
   const whatsappMessageHero = "👕 Olá! Vi as camisetas no site e quero fortalecer a Marcha Guarulhos!"
   const whatsappMessagePix = "✅ Olá! Fiz o PIX e gostaria de enviar o comprovante para garantir minha camiseta!"
   const instagramProfile = "marchadamaconhagru"
