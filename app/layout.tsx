@@ -11,7 +11,6 @@ const vt323 = VT323({ subsets: ["latin"], weight: ["400"], variable: "--font-vt3
 export const metadata: Metadata = {
   title: "Marcha da Maconha Guarulhos - Camisetas Oficiais",
   description: "Apoie o movimento, vista a luta. Camisetas oficiais da Marcha da Maconha Guarulhos.",
-    generator: 'v0.dev'
 }
 
 export default function RootLayout({

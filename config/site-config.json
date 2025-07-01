@@ -1,0 +1,95 @@
+{
+  "site": {
+    "name": "Camisetas da Marcha - Guarulhos",
+    "description": "Camisetas oficiais da Marcha da Maconha Guarulhos. Apoie o movimento, espalhe a mensagem e fortaleça a resistência!",
+    "city": "Guarulhos",
+    "year": "2025",
+    "deliveryInfo": "Entregas em Guarulhos (ou retirada na Marcha!)"
+  },
+  "contact": {
+    "whatsappNumber": "5511975661411",
+    "instagramProfile": "marchadamaconhagru",
+    "pixKey": "fortalecenossacasa@gmail.com"
+  },
+  "whatsappMessages": {
+    "hero": "👕 Olá! Vi as camisetas no site e quero fortalecer a Marcha Guarulhos!",
+    "pix": "✅ Olá! Fiz o PIX e gostaria de enviar o comprovante para garantir minha camiseta!",
+    "participate": "Olá! Quero saber mais sobre a Marcha da Maconha Guarulhos e como posso participar!"
+  },
+  "images": {
+    "logo": "/logo-novo.png",
+    "heroBanner": "/hero-camisetas.png",
+    "heroBannerAlt": "Três camisetas da Marcha da Maconha Guarulhos - vermelha, preta e bege com diferentes designs",
+    "aboutImage": "/marcha-guarulhos-2024.jpeg",
+    "aboutImageAlt": "Marcha da Maconha Guarulhos 2024 - Faixa 'Parem de nos matar, Legaliza!'"
+  },
+  "products": {
+    "defaultPrice": "60",
+    "currency": "R$",
+    "availableSizes": ["P", "M", "G", "GG"],
+    "items": [
+      {
+        "id": "modelo-1",
+        "title": "🖤 Modelo 1",
+        "image": "/modelo-camiseta1.png",
+        "alt": "Camiseta Modelo 1 - Marcha da Maconha Guarulhos",
+        "whatsappMessage": "Olá! Quero a camiseta Modelo 1 da Marcha da Maconha Guarulhos.",
+        "price": "60"
+      },
+      {
+        "id": "modelo-2",
+        "title": "💚 Modelo 2",
+        "image": "/modelo-camiseta2.png",
+        "alt": "Camiseta Modelo 2 - Marcha da Maconha Guarulhos",
+        "whatsappMessage": "Olá! Quero a camiseta Modelo 2 da Marcha da Maconha Guarulhos.",
+        "price": "60"
+      },
+      {
+        "id": "modelo-3",
+        "title": "🤍 Modelo 3",
+        "image": "/modelo-camiseta3.png",
+        "alt": "Camiseta Modelo 3 - Marcha da Maconha Guarulhos",
+        "whatsappMessage": "Olá! Quero a camiseta Modelo 3 da Marcha da Maconha Guarulhos.",
+        "price": "60"
+      },
+      {
+        "id": "modelo-4",
+        "title": "🌿 Modelo 4",
+        "image": "/modelo-camiseta4.png",
+        "alt": "Camiseta Modelo 4 - Marcha da Maconha Guarulhos",
+        "whatsappMessage": "Olá! Quero a camiseta Modelo 4 da Marcha da Maconha Guarulhos.",
+        "price": "60"
+      },
+      {
+        "id": "modelo-5",
+        "title": "🔥 Modelo 5",
+        "image": "/modelo-camiseta5.png",
+        "alt": "Camiseta Modelo 5 - Marcha da Maconha Guarulhos",
+        "whatsappMessage": "Olá! Quero a camiseta Modelo 5 da Marcha da Maconha Guarulhos.",
+        "price": "60"
+      },
+      {
+        "id": "modelo-6",
+        "title": "✊ Modelo 6",
+        "image": "/modelo-camiseta6.png",
+        "alt": "Camiseta Modelo 6 - Marcha da Maconha Guarulhos",
+        "whatsappMessage": "Olá! Quero a camiseta Modelo 6 da Marcha da Maconha Guarulhos.",
+        "price": "60"
+      }
+    ]
+  },
+  "content": {
+    "aboutText": [
+      "A Marcha da Maconha Guarulhos é um movimento social autônomo que atua na cidade desde pelo menos 2016, integrando a luta nacional pela legalização da cannabis e pela reforma da política de drogas no Brasil. Organizada por coletivos locais e ativistas da periferia, a marcha é construída de forma horizontal, colaborativa e sem vínculos com partidos ou empresas.",
+      "Em 2024, mesmo diante da sanção da Lei Municipal 8.225, que tentou proibir manifestações como a nossa, resistimos e ocupamos as ruas com o tema \"Parem de nos matar! Legaliza!\". A concentração ocorreu em frente à Prefeitura de Guarulhos, seguida de caminhada até o Jardim Pinhal, com apoio de artistas e coletivos culturais locais.",
+      "A Marcha da Maconha Guarulhos é mais do que um ato político: é um espaço de acolhimento, formação e resistência. Pautamos o fim da guerra às drogas, o combate ao racismo estrutural, o direito ao autocultivo e o acesso à cannabis medicinal pelo SUS. Nossa luta é pela vida, pela liberdade e por uma política de drogas que respeite os direitos humanos.",
+      "A cada ano, a marcha cresce com a força da quebrada, da juventude negra e periférica, e de todos que acreditam em um futuro mais justo e livre."
+    ],
+    "howToBuySteps": [
+      "Escolha seu modelo favorito no catálogo acima.",
+      "Faça o Pix usando a chave que disponibilizamos.",
+      "Envie o comprovante, tamanho e endereço no nosso WhatsApp.",
+      "Pronto! Entraremos em contato para confirmar a entrega ou retirada."
+    ]
+  }
+}

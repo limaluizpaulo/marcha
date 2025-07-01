@@ -1,0 +1,71 @@
+{
+  "site": {
+    "name": "Camisetas da Marcha - São Paulo",
+    "description": "Camisetas oficiais da Marcha da Maconha São Paulo. Vista a luta, fortaleça o movimento antiproibicionista paulistano!",
+    "city": "São Paulo",
+    "year": "2025",
+    "deliveryInfo": "Entregas na Grande São Paulo (ou retirada na Marcha!)"
+  },
+  "contact": {
+    "whatsappNumber": "5511999888777",
+    "instagramProfile": "marchasp",
+    "pixKey": "marchasp@gmail.com"
+  },
+  "whatsappMessages": {
+    "hero": "👕 Olá! Vi as camisetas no site e quero fortalecer a Marcha São Paulo!",
+    "pix": "✅ Olá! Fiz o PIX e gostaria de enviar o comprovante para garantir minha camiseta!",
+    "participate": "Olá! Quero saber mais sobre a Marcha da Maconha São Paulo e como posso participar!"
+  },
+  "images": {
+    "logo": "/logo-marcha-sp.png",
+    "heroBanner": "/banner-camisetas-sp.png",
+    "heroBannerAlt": "Camisetas da Marcha da Maconha São Paulo - diversos modelos",
+    "aboutImage": "/marcha-sp-2024.jpeg",
+    "aboutImageAlt": "Marcha da Maconha São Paulo 2024 - Avenida Paulista lotada"
+  },
+  "products": {
+    "defaultPrice": "45",
+    "currency": "R$",
+    "availableSizes": ["PP", "P", "M", "G", "GG", "XG"],
+    "items": [
+      {
+        "id": "modelo-classico",
+        "title": "🏴 Clássico SP",
+        "image": "/sp-modelo-classico.png",
+        "alt": "Camiseta Clássica - Marcha da Maconha São Paulo",
+        "whatsappMessage": "Olá! Quero a camiseta Clássica da Marcha da Maconha São Paulo.",
+        "price": "45"
+      },
+      {
+        "id": "modelo-sampa",
+        "title": "🌆 Sampa Resiste",
+        "image": "/sp-modelo-sampa.png",
+        "alt": "Camiseta Sampa Resiste - Marcha da Maconha São Paulo",
+        "whatsappMessage": "Olá! Quero a camiseta 'Sampa Resiste' da Marcha da Maconha São Paulo.",
+        "price": "50"
+      },
+      {
+        "id": "modelo-paulista",
+        "title": "🚇 Paulista Livre",
+        "image": "/sp-modelo-paulista.png",
+        "alt": "Camiseta Paulista Livre - Marcha da Maconha São Paulo",
+        "whatsappMessage": "Olá! Quero a camiseta 'Paulista Livre' da Marcha da Maconha São Paulo.",
+        "price": "45"
+      }
+    ]
+  },
+  "content": {
+    "aboutText": [
+      "A Marcha da Maconha São Paulo é uma das maiores manifestações antiproibicionistas do país, reunindo milhares de pessoas na Avenida Paulista desde 2011. Nosso movimento luta pela descriminalização das drogas, fim do encarceramento em massa e por uma política de drogas baseada em evidências científicas e direitos humanos.",
+      "São Paulo sempre foi pioneira na luta antiproibicionista nacional. Nossa marcha cresce a cada ano, levando às ruas da maior metrópole do país a mensagem de que a guerra às drogas fracassou e precisa acabar. Marchamos pela vida, pela liberdade e pela justiça social.",
+      "Somos um movimento horizontal, apartidário e antirracista. Lutamos pelo direito ao próprio corpo, pela descriminalização do usuário, pela regulamentação da cannabis medicinal e pelo fim da criminalização que mata principalmente jovens negros e periféricos.",
+      "Junte-se a nós nessa luta! A Marcha da Maconha São Paulo é feita por pessoas como você, que acreditam em um futuro mais justo e humano."
+    ],
+    "howToBuySteps": [
+      "Escolha seu modelo favorito entre os disponíveis.",
+      "Faça o Pix usando nossa chave oficial.",
+      "Envie o comprovante, seu tamanho e região de SP no WhatsApp.",
+      "Pronto! Entraremos em contato para combinar entrega ou retirada."
+    ]
+  }
+}
