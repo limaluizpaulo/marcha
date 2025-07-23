@@ -203,7 +203,6 @@ export default function HomePage() {
                           />
                         </div>
                         <div className="p-6 text-center flex flex-col flex-grow">
-                          <h3 className="font-oswald text-3xl font-bold uppercase text-branco-giz">{item.title}</h3>
                           <p className="mt-2 text-sm text-branco-giz/70">Tamanhos: {siteConfig.products.availableSizes.join(" / ")}</p>
                           <p className="text-4xl font-bold text-branco-giz my-4">{siteConfig.products.currency} {item.price}</p>
                           <div className="mt-auto flex justify-center">
