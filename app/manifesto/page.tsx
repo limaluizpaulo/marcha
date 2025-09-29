@@ -110,7 +110,7 @@ export default function ManifestoPage() {
           </AnimatedSection>
         </section>
 
-        {/* Seção 1: Manifesto Oficial */}
+        {/* Manifesto Completo */}
         <AnimatedSection className="bg-preto-asfalto py-12 sm:py-24 px-4" animationClass="animate-fadeInUp" delay="0.3s">
           <div className="container mx-auto max-w-4xl">
             <div className="bg-neutral-900 p-4 sm:p-8 lg:p-12 rounded-xl sm:rounded-2xl border-2 border-verde-detalhe/50 shadow-2xl">
@@ -147,20 +147,7 @@ export default function ManifestoPage() {
                   implementadas políticas públicas de acesso à medicina endocanabinoide e que a sociedade reconheça 
                   a cannabis como recurso valioso no cuidado de diversas condições, garantindo acesso, dignidade e reparação.
                 </p>
-              </div>
-            </div>
-          </div>
-        </AnimatedSection>
-
-        {/* Seção 2: Guerra às Drogas e Violência Estrutural */}
-        <section className="bg-neutral-950 py-12 sm:py-24 px-4">
-          <AnimatedSection className="container mx-auto max-w-4xl" animationClass="animate-fadeInUp" delay="0.2s">
-            <h2 className="font-oswald text-2xl sm:text-4xl lg:text-5xl font-bold uppercase mb-8 sm:mb-12 text-branco-giz text-center leading-tight px-2">
-              ✊ Contra a Guerra às Drogas
-            </h2>
-            
-            <div className="bg-preto-asfalto p-4 sm:p-8 lg:p-12 rounded-xl sm:rounded-2xl border-2 border-verde-detalhe/50 shadow-2xl">
-              <div className="space-y-6 sm:space-y-8 text-base sm:text-lg text-branco-giz/90 leading-relaxed">
+                
                 <p>
                   Não podemos ignorar os efeitos da chamada <strong className="text-verde-detalhe">"guerra às drogas"</strong>, 
                   que perpetua desigualdades e violências, sobretudo contra as populações negras, periféricas, faveladas, 
@@ -190,30 +177,14 @@ export default function ManifestoPage() {
                   Cannabis é maconha e deve ser reconhecida como ferramenta de cura e bem-estar, especialmente onde 
                   o acesso à saúde é precário e a violência estrutural atinge as pessoas mais vulneráveis.
                 </p>
-              </div>
-            </div>
-          </AnimatedSection>
-        </section>
-
-        {/* Seção 3: Movimento Suprapartidário */}
-        <AnimatedSection className="bg-preto-asfalto py-12 sm:py-24 px-4" animationClass="animate-fadeInUp" delay="0.3s">
-          <div className="container mx-auto max-w-4xl">
-            <h2 className="font-oswald text-2xl sm:text-4xl lg:text-5xl font-bold uppercase mb-8 sm:mb-12 text-branco-giz text-center leading-tight px-2">
-              🤝 Movimento Suprapartidário
-            </h2>
-            
-            <div className="bg-neutral-900 p-4 sm:p-8 lg:p-12 rounded-xl sm:rounded-2xl border-2 border-verde-detalhe/50 shadow-2xl">
-              <div className="space-y-6 sm:space-y-8 text-base sm:text-lg text-branco-giz/90 leading-relaxed text-center">
-                <p className="text-lg sm:text-xl font-bold text-verde-detalhe mb-4 sm:mb-6 leading-tight">
-                  A Marcha da Maconha Guarulhos é suprapartidária e nasce da união entre movimentos sociais e sociedade civil organizada.
-                </p>
                 
                 <p>
+                  A Marcha da Maconha Guarulhos é suprapartidária e nasce da união entre movimentos sociais e sociedade civil organizada. 
                   Não representamos um partido ou coletivo específico, mas todas as pessoas que acreditam em um futuro 
                   no qual o <strong className="text-verde-detalhe">direito de viver bem seja para todas, todos e todes</strong>.
                 </p>
                 
-                <div className="bg-verde-detalhe/10 border border-verde-detalhe/50 p-4 sm:p-8 rounded-xl">
+                <div className="bg-verde-detalhe/10 border border-verde-detalhe/50 p-4 sm:p-8 rounded-xl text-center">
                   <p className="text-xl sm:text-2xl font-bold text-verde-detalhe mb-3 sm:mb-4 leading-tight">
                     ✊ Seguimos firmes na resistência
                   </p>
@@ -222,7 +193,7 @@ export default function ManifestoPage() {
                   </p>
                 </div>
                 
-                <p className="text-xl font-bold text-branco-giz">
+                <p className="text-xl font-bold text-branco-giz text-center">
                   É hora de trazer a maconha de volta às comunidades – como saúde, como respeito, como reparação.
                 </p>
               </div>
@@ -230,7 +201,9 @@ export default function ManifestoPage() {
           </div>
         </AnimatedSection>
 
-        {/* Seção 4: Chamada para Ação Final */}
+
+
+        {/* Chamada para Ação Final */}
         <AnimatedSection className="bg-gradient-to-b from-preto-asfalto to-black py-12 sm:py-24 px-4" animationClass="animate-fadeIn" delay="0.4s">
           <div className="container mx-auto max-w-4xl text-center">
             <div className="bg-verde-detalhe/10 border-4 border-verde-detalhe p-4 sm:p-8 lg:p-12 rounded-xl sm:rounded-2xl shadow-2xl mb-8 sm:mb-12">
