@@ -27,23 +27,12 @@ const AnimatedSection: React.FC<{
 
 export default function HomePage() {
   const [copied, setCopied] = useState(false)
-  const [isScrolled, setIsScrolled] = useState(false)
 
   const handleCopy = () => {
     navigator.clipboard.writeText(siteConfig.contact.pixKey)
     setCopied(true)
     setTimeout(() => setCopied(false), 2000)
   }
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY
-      setIsScrolled(scrollTop > 50)
-    }
-
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
 
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: "start" })
 
@@ -57,34 +46,29 @@ export default function HomePage() {
 
   return (
     <div className="bg-preto-asfalto text-branco-giz min-h-screen overflow-x-hidden">
-      <header
-        className={`fixed top-0 left-0 right-0 z-50 bg-black shadow-2xl transition-all duration-500 ease-in-out ${
-          isScrolled ? "h-[72px]" : "h-[120px] border-b-2 border-verde-detalhe/50"
-        }`}
-      >
-        <div className="container mx-auto px-4 h-full flex justify-end items-center">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-black shadow-2xl h-[70px] border-b-2 border-verde-detalhe/50">
+        <div className="container mx-auto px-2 sm:px-4 h-full flex items-center justify-between">
+          {/* Logo - sempre à esquerda */}
           <Link
             href="/"
-            className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 group"
+            className="flex-shrink-0 group"
             aria-label="Página Inicial"
           >
             <Image
               src={siteConfig.images.logo}
               alt={`Logo ${siteConfig.site.name}`}
-              width={isScrolled ? 120 : 180}
-              height={isScrolled ? 48 : 72}
-              className={`group-hover:opacity-80 transition-all duration-500 ease-in-out ${
-                isScrolled ? "h-12" : "h-18"
-              }`}
+              width={120}
+              height={48}
+              className="group-hover:opacity-80 transition-opacity duration-300 h-12"
               priority
             />
           </Link>
+
+          {/* Navegação à direita */}
           <nav className="flex items-center gap-2 sm:gap-3">
             <Link
               href="/manifesto"
-              className={`text-verde-detalhe hover:text-verde-detalhe/80 transition-all duration-300 font-oswald font-bold uppercase tracking-wide ${
-                isScrolled ? "text-sm px-3 py-2" : "text-base px-4 py-3"
-              } rounded-lg hover:bg-verde-detalhe/10`}
+              className="text-verde-detalhe hover:text-verde-detalhe/80 transition-colors duration-300 font-oswald font-bold uppercase tracking-wide whitespace-nowrap text-sm px-3 py-2 rounded-lg hover:bg-verde-detalhe/10"
               aria-label="Manifesto"
             >
               Manifesto
@@ -92,27 +76,23 @@ export default function HomePage() {
             <Link
               href={`https://wa.me/${siteConfig.contact.whatsappNumber}?text=${encodeURIComponent(siteConfig.whatsappMessages.hero)}`}
               target="_blank"
-              className={`rounded-full hover:bg-verde-detalhe/20 transition-all duration-500 hover:scale-110 ${
-                isScrolled ? "p-2.5" : "p-4"
-              }`}
+              className="rounded-full hover:bg-verde-detalhe/20 transition-all duration-300 hover:scale-110 p-2.5"
               aria-label="WhatsApp"
             >
-              <MessageCircle size={isScrolled ? 24 : 36} className="text-verde-detalhe transition-all duration-500" />
+              <MessageCircle size={24} className="text-verde-detalhe" />
             </Link>
             <Link
               href={`https://www.instagram.com/${siteConfig.contact.instagramProfile}`}
               target="_blank"
-              className={`rounded-full hover:bg-verde-detalhe/20 transition-all duration-500 hover:scale-110 ${
-                isScrolled ? "p-2.5" : "p-4"
-              }`}
+              className="rounded-full hover:bg-verde-detalhe/20 transition-all duration-300 hover:scale-110 p-2.5"
               aria-label="Instagram"
             >
-              <Instagram size={isScrolled ? 24 : 36} className="text-verde-detalhe transition-all duration-500" />
+              <Instagram size={24} className="text-verde-detalhe" />
             </Link>
           </nav>
         </div>
       </header>
-      <main className={`${isScrolled ? "pt-[72px]" : "pt-[120px]"} transition-all duration-500 ease-in-out`}>
+      <main className="pt-[70px]">
         {/* Seção 1: Banner Principal */}
         <section className="relative bg-black">
           <div className="w-full max-w-6xl mx-auto">
