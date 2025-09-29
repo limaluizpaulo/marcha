@@ -81,6 +81,15 @@ export default function HomePage() {
           </Link>
           <nav className="flex items-center gap-2 sm:gap-3">
             <Link
+              href="/manifesto"
+              className={`text-verde-detalhe hover:text-verde-detalhe/80 transition-all duration-300 font-oswald font-bold uppercase tracking-wide ${
+                isScrolled ? "text-sm px-3 py-2" : "text-base px-4 py-3"
+              } rounded-lg hover:bg-verde-detalhe/10`}
+              aria-label="Manifesto"
+            >
+              Manifesto
+            </Link>
+            <Link
               href={`https://wa.me/${siteConfig.contact.whatsappNumber}?text=${encodeURIComponent(siteConfig.whatsappMessages.hero)}`}
               target="_blank"
               className={`rounded-full hover:bg-verde-detalhe/20 transition-all duration-500 hover:scale-110 ${
