@@ -24,11 +24,9 @@
     "aboutImageAlt": "Marcha da Maconha Guarulhos 2024 - Faixa 'Parem de nos matar, Legaliza!'"
   },
   "products": {
-    "defaultPrice": "50",
-    "originalPrice": "60",
+    "defaultPrice": "60",
     "currency": "R$",
     "availableSizes": ["P", "M", "G", "GG"],
-    "blackFridayPromo": true,
     "items": [
       {
         "id": "modelo-1",
@@ -36,7 +34,7 @@
         "image": "/modelo-camiseta1.png",
         "alt": "Camiseta Modelo 1 - Marcha da Maconha Guarulhos",
         "whatsappMessage": "Olá! Quero a camiseta Modelo 1 da Marcha da Maconha Guarulhos.",
-        "price": "50"
+        "price": "60"
       },
       {
         "id": "modelo-2",
@@ -44,7 +42,7 @@
         "image": "/modelo-camiseta2.png",
         "alt": "Camiseta Modelo 2 - Marcha da Maconha Guarulhos",
         "whatsappMessage": "Olá! Quero a camiseta Modelo 2 da Marcha da Maconha Guarulhos.",
-        "price": "50"
+        "price": "60"
       },
       {
         "id": "modelo-3",
@@ -52,7 +50,7 @@
         "image": "/modelo-camiseta3.png",
         "alt": "Camiseta Modelo 3 - Marcha da Maconha Guarulhos",
         "whatsappMessage": "Olá! Quero a camiseta Modelo 3 da Marcha da Maconha Guarulhos.",
-        "price": "50"
+        "price": "60"
       },
       {
         "id": "modelo-4",
@@ -60,7 +58,7 @@
         "image": "/modelo-camiseta4.png",
         "alt": "Camiseta Modelo 4 - Marcha da Maconha Guarulhos",
         "whatsappMessage": "Olá! Quero a camiseta Modelo 4 da Marcha da Maconha Guarulhos.",
-        "price": "50"
+        "price": "60"
       },
       {
         "id": "modelo-5",
@@ -68,7 +66,7 @@
         "image": "/modelo-camiseta5.png",
         "alt": "Camiseta Modelo 5 - Marcha da Maconha Guarulhos",
         "whatsappMessage": "Olá! Quero a camiseta Modelo 5 da Marcha da Maconha Guarulhos.",
-        "price": "50"
+        "price": "60"
       },
       {
         "id": "modelo-6",
@@ -76,7 +74,7 @@
         "image": "/modelo-camiseta6.png",
         "alt": "Camiseta Modelo 6 - Marcha da Maconha Guarulhos",
         "whatsappMessage": "Olá! Quero a camiseta Modelo 6 da Marcha da Maconha Guarulhos.",
-        "price": "50"
+        "price": "60"
       }
     ]
   },

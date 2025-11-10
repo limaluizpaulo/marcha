@@ -93,24 +93,6 @@ export default function HomePage() {
         </div>
       </header>
       <main className="pt-[70px]">
-        {/* Banner Black Friday */}
-        {siteConfig.products.blackFridayPromo && (
-          <div className="bg-gradient-to-r from-red-600 via-black to-red-600 border-b-4 border-verde-detalhe py-4 px-4">
-            <div className="container mx-auto text-center">
-              <p className="font-oswald text-2xl sm:text-4xl font-bold uppercase text-branco-giz animate-pulse">
-                🔥 BLACK FRIDAY 🔥
-              </p>
-              <p className="text-lg sm:text-xl text-branco-giz mt-2">
-                <span className="line-through text-branco-giz/60">{siteConfig.products.currency}{siteConfig.products.originalPrice}</span>
-                {' → '}
-                <span className="text-verde-detalhe font-bold text-2xl sm:text-3xl">{siteConfig.products.currency}{siteConfig.products.defaultPrice}</span>
-                {' '}
-                <span className="text-sm sm:text-base">(Sexta a Domingo!)</span>
-              </p>
-            </div>
-          </div>
-        )}
-        
         {/* Seção 1: Banner Principal */}
         <section className="relative bg-black">
           <div className="w-full max-w-6xl mx-auto">
@@ -162,20 +144,7 @@ export default function HomePage() {
               </p>
             </div>
             <p className="text-lg text-branco-giz/90">
-              Valor: {siteConfig.products.blackFridayPromo && (
-                <span className="line-through text-branco-giz/50 text-base mr-2">
-                  {siteConfig.products.currency} {siteConfig.products.originalPrice},00
-                </span>
-              )}
-              <span className="font-bold text-xl text-verde-detalhe">
-                {siteConfig.products.currency} {siteConfig.products.defaultPrice},00
-              </span>
-              {siteConfig.products.blackFridayPromo && (
-                <span className="ml-2 bg-red-600 text-branco-giz px-2 py-1 rounded text-sm font-bold">
-                  BLACK FRIDAY!
-                </span>
-              )}
-              {" "}
+              Valor: <span className="font-bold text-xl text-verde-detalhe">{siteConfig.products.currency} {siteConfig.products.defaultPrice},00</span>{" "}
               <span className="block sm:inline-block text-sm text-branco-giz/70">
                 (contribuição consciente é bem-vinda!)
               </span>
@@ -224,17 +193,7 @@ export default function HomePage() {
                         </div>
                         <div className="p-6 text-center flex flex-col flex-grow">
                           <p className="mt-2 text-sm text-branco-giz/70">Tamanhos: {siteConfig.products.availableSizes.join(" / ")}</p>
-                          <div className="my-4">
-                            {siteConfig.products.blackFridayPromo && (
-                              <p className="text-xl line-through text-branco-giz/50">{siteConfig.products.currency} {siteConfig.products.originalPrice}</p>
-                            )}
-                            <p className="text-4xl font-bold text-verde-detalhe">{siteConfig.products.currency} {item.price}</p>
-                            {siteConfig.products.blackFridayPromo && (
-                              <p className="text-sm text-red-500 font-bold mt-1 bg-red-500/20 inline-block px-3 py-1 rounded-full">
-                                🔥 BLACK FRIDAY
-                              </p>
-                            )}
-                          </div>
+                          <p className="text-4xl font-bold text-branco-giz my-4">{siteConfig.products.currency} {item.price}</p>
                           <div className="mt-auto flex justify-center">
                             <Link
                               href={`https://wa.me/${siteConfig.contact.whatsappNumber}?text=${encodeURIComponent(item.whatsappMessage)}`}
